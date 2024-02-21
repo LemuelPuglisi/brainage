@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brainage"
+version = "0.0.0"
+authors = [
+  { name="Lemuel Puglisi", email="lemuelpuglisi001@gmail.com" },
+]
+description = "Unofficial PyTorch implementation of https://www.sciencedirect.com/science/article/pii/S1053811922000015?via%3Dihub#fig0003"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+brainage = "brainage.cli:run_brainage"
+
+[options]
+package_dir = "src"
+
+[options.packages.find]
+where="src"
