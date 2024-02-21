@@ -1,6 +1,16 @@
-# brainage
+<h1 align="center">
+  <br>
+  brainage 
+  <br>
+</h1>
 
-Unofficial implementation of "[Accurate brain‐age models for routine clinical MRI examinations](https://www.sciencedirect.com/science/article/pii/S1053811922000015?via%3Dihub#fig0003)". The official implemnetation is [here](https://github.com/MIDIconsortium/BrainAge).
+<p align="center">
+  <img src="assets/scatter.png" />
+</p>
+
+Unofficial implementation of "[Accurate brain‐age models for routine clinical MRI examinations](https://www.sciencedirect.com/science/article/pii/S1053811922000015?via%3Dihub#fig0003)". 
+
+For the official implementation, [see here](https://github.com/MIDIconsortium/BrainAge).
 
 ## Installation
 
@@ -24,7 +34,7 @@ pip install . # or -e . for development
 
 ## Pretrained model
 
-A pretrained model is provided in the `models` folder. The model has been trained on T1w brain MRIs from Cognitively Normal subjects from ADNI, AIBL and OASIS 3. All the T1w Brain MRIs have been preprocessed using `Turboprep` ([see here](https://github.com/LemuelPuglisi/turboprep)). The Mean Absolute Error of this model (from a separate test set) is $4.39 \pm 3.61$, while the one reported in the paper has a MAE of $3.83$ for skull-stripped T1w scans and $4.86$ for raw T1w scans. The training set used for our model is one order of magnitude smaller than the one in the paper.
+A pretrained model is provided in the `models` folder. The model has been trained on T1w brain MRIs from Cognitively Normal subjects from ADNI, AIBL and OASIS 3. All the T1w Brain MRIs have been preprocessed using `Turboprep` ([see here](https://github.com/LemuelPuglisi/turboprep)). The Mean Absolute Error of this model (from a separate test set) is $3.80$ and matches the performances reported in the paper.
 
 
 ## Usage
