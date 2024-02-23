@@ -33,7 +33,7 @@ def run_brainage():
 
     # Load the trained model
     net = DenseNet(3,1,1).to(device)
-    net.load_state_dict(torch.load(args.checkpoints))
+    net.load_state_dict(torch.load(args.checkpoints, map_location=torch.device(device)))
     net.eval()
 
     # Load the input CSV
